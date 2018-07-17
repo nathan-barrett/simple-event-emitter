@@ -7,7 +7,7 @@ Nathan Barrett
 
 ## Description:
 
-Event Emitters are objects that serve at the core building block in event-driven arcitecture. The goal of event emmiters is to decludder and clean code, especially asyncronous code. This particular code is written in ES6. This Event Emitter Module conatins the most basic uses for an event Emitter: subscription to an event, unsubscribing from either a single event or all events, emitting the subscribed events and only running an event once and then automatically unsubcribing from that specific event.
+Event Emitters are objects that serve at the core building block in event-driven arcitecture. The goal of event emmiters is to declutter and clean code, especially asyncronous code. This code is written in ES6. This Event Emitter Module conatins the most basic uses for an event Emitter: subscription to an event, unsubscribing from either a single event or all events, emitting the subscribed events and only running an event once and then automatically unsubcribing from that specific event.
 
 ## Installation
 ```
@@ -26,7 +26,7 @@ Once you require Event Emitter from index.js you just need to create an instance
 ``` js
 const ee = new EventEmitter();
 ```
-There are several different that come with the Event Emitter class, including: .on, .emit, .once, and  .off
+There are several different methods that come with the Event Emitter class: .on, .emit, .once, and  .off
 
 ## .on
 ```js
@@ -44,7 +44,7 @@ ee.on('sum', (a, b, c, d, e, f) => {
 })
 ```
 ## .emit
-When every you want to actual trigger your function, you call the emit method calling whatver event you subcribed to previously:
+Whenever you want to actual trigger your function, you call the emit method calling whatver event you subcribed to previously:
 ```js
 ee.emit('click', 'hello');
 ee.emit('sum', 1, 2, 3, 4, 5, 6);
@@ -80,11 +80,11 @@ Which will call the console.log, but if you tried to emit again, it would not wo
 All testing was done with Jest and Jest's expect library
 
 ## Notes
-This was a really fun exersise - I hadn't really attempted to make a NPM module before, and it was a really exciting was to learn more about the how JavaScript uses events as a cornerstome of its programming philosophy. Specifically, my last interview with Harvey I learned a bit about Sets in javascript, and it was pretty cool to use those for the first time. 
+This was a really fun exercise - I hadn't attempted to make a NPM module before, and it was exciting was to learn more about how JavaScript uses events as a cornerstone of its programming philosophy. 
 
 Here are a few links that helped me understand a little more:
 
 1. [Eloquent JavaScript](https://eloquentjavascript.net/15_event.html)
 2. [Mozilla Developer Network on Events as a building block](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events)
 
-Moving forward, I would like to incorporate type checking and error handling becuase without it, the testing was a bit complex.
+Moving forward, I would like to incorporate type checking and error handling -- without it the testing was a bit complex.

@@ -11,7 +11,7 @@ class EventEmitter {
 		this.events[e] = new Set([fn]);
 	}
 	once(e, fn) {
-     // Much like the .on method, except for also adding a the kay "1" to provide for branching in the emit argument to see if it needs to be unsubcribed from
+     // Much like the .on method, except for also adding a the key "1" to provide for branching in the emit argument to see if it needs to be unsubcribed from
 		if (this.events[e]) {
 			this.event[e].add(fn, 1);
 		}
