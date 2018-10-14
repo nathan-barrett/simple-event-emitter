@@ -1,4 +1,4 @@
-# Event Emitter for JavaScript (Urban Airship Challenge)
+# Event Emitter for JavaScript
 Nathan Barrett
 
 :email: demeules.barrett@gmail.com
